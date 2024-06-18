@@ -1,0 +1,7 @@
+FROM ntop/ntopng:stable
+
+COPY ntopng.sh /ntopng.sh
+
+RUN chmod +x /ntopng.sh
+
+ENTRYPOINT ["/ntopng.sh"]
