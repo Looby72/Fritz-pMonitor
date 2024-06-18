@@ -1,7 +1,6 @@
-# FritzBox Network traffic analyzer
+# Fritz-pMonitor: Fritz!Box Network Traffic Analyzer
 
-This is an automatric network package captureing tool for FritzBoxes. It captures Network packages and analyzes them with ntopng.
-This repo is based on the work of Davide Queranta. He created the idea and the initial fritzcap docker image. See his [Blogpost](https://davquar.it/post/self-hosting/ntopng-fritzbox-monitoring/) where he published it.
+Fritz-pMonitor is an automated tool designed for capturing and analyzing network packets on Fritz!Box routers. It captures network traffic on selected network interfaces and analyzes it using ntopng. This repository builds upon the foundational work of Davide Queranta, who conceptualized and created the initial fritzcap Docker image. For more information, see his [blog post](https://davquar.it/post/self-hosting/ntopng-fritzbox-monitoring/) where he introduced the project.
 
 ## Requirements
 
@@ -10,7 +9,7 @@ docker must be installed
 ## How to use
 
 1. clone the repo
-    ```git clone ...```
+    ```git clone git@github.com:Looby72/Fritz-pMonitor.git```
 2. create a .env file in the /fritzcap directory and store the following information into it (seperated by \n):
     - Fritz!Box Username
     - Fritz!Box Password
