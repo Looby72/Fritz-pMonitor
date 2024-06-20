@@ -1,4 +1,4 @@
-FROM ntop/ntopng:stable
+FROM ntop/ntopng_arm64.dev:latest
 
 COPY ntopng.sh /ntopng.sh
 
