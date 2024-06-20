@@ -4,4 +4,4 @@ COPY ntopng.sh /ntopng.sh
 
 RUN chmod +x /ntopng.sh
 
-ENTRYPOINT ["/ntopng.sh"]
+ENTRYPOINT ["/bin/bash", "/ntopng.sh"]
