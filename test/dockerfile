@@ -1,7 +1,9 @@
 FROM alpine:3.17
 
-RUN apk add bash && \
-    mkdir /pcap
+COPY testData.pcap.gz /testData.pcap.gz
+RUN apk add bash gzip && \
+    mkdir /pcap && \
+    gunzip testData.pcap.gz
 COPY pcap.sh /pcap.sh
 
 ENTRYPOINT ["bash", "/pcap.sh"]
